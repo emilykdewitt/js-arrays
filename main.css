@@ -5,3 +5,22 @@ body {
 .dinosaur {
     border: 2px solid burlywood;
 }
+
+.assignment {
+    width: 18%;
+    border: 2px black solid;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.due-date {
+    background-color: lightgrey;
+}
+
+.assignment-title {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
