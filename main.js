@@ -8,19 +8,25 @@ const printToDom = (divId, textToPrint) => {
 const dinosaurs = [
     {
         dinoType: 'velociraptor', //this is called a key-value pair
+        name: 'Rosco',
     },
     {
         dinoType: 'pterodactyl',
+        name: 'Terrence',
     },
     {
         dinoType: 'stegosaurus', 
+        name: 'Nancy',
     }
 ];
 
 const buildDinosaurs = () => {
     let domString = '';
     for(let i = 0; i < dinosaurs.length; i++) {
-        domString += `<h3>${dinosaurs[i].dinoType}</h3>`
+        domString += `<div class="dinosaur">`;
+        domString += `<h3>${dinosaurs[i].dinoType}</h3>`;
+        domString += `<p>${dinosaurs[i].name}`;
+        domString += `</div>`;
     }
     printToDom('dino-barn', domString);
 };
